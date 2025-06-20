@@ -18,6 +18,6 @@ async def on_ready():
 @bot.event
 async def on_command_error(ctx, error):
   if isinstance(error, commands.CommandNotFound):
-    await ctx.send("❌ Invalid command. Please use **`-help`** for a list of available commands.")
+    await ctx.send("❌ Invalid command")
 
 bot.run(TOKEN)
